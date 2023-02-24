@@ -1,5 +1,12 @@
 # LightBnB
 
+A simple multi-page Airbnb clone that uses a server-side Javascript to display the information from the queries to web pages via SQL queries.
+
+## Final Product
+<img alt="Home page view as a logged in user" height="50%" width = "50%" src="../imgs/homePage_LoggedInUser.png" /> View of the home page as a logged-in user.
+
+<img alt="Create A Listing Page" height="50%" width ="50%" src="../imgs/create_listing.png"/> View of the Create Listing Page.   
+
 ## Project Structure
 
 ```
@@ -41,3 +48,21 @@
   * `apiRoutes.js` and `userRoutes.js` are responsible for any HTTP requests to `/users/something` or `/api/something`. 
   * `json` is a directory that contains a bunch of dummy data in `.json` files.
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
+
+## Dependencies
+
+- Node.js
+- bcrypt 
+- body-parser
+- cookie-session
+- express
+- nodemon
+- pg
+
+## Getting Started
+
+1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
+2. Clone your repository onto your local device.
+3. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
+4. Go to <http://localhost:3000/> in your browser.
